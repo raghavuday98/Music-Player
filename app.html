@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="music-player">
+        <!-- Navbar -->
+        <div class="nav-bar">
+            <!-- Left: Logo & Title -->
+            <div class="nav-left">
+                <img src="app-icon.png" alt="Logo">
+                <span>My Music</span>
+            </div>
+
+            <!-- Center: Search Bar -->
+            <div class="nav-center">
+                <input type="text" placeholder="Search for a song..." class="song-search">
+            </div>
+
+            <!-- Right: Profile & Settings -->
+            <div class="nav-right">
+                <i class="fas fa-cog"></i> <!-- Settings Icon -->
+                <img src="user.png" alt="Profile"> <!-- Profile Icon -->
+            </div>
+        </div>
+
+        <div class="playlist">
+            <div class="best-collection">Best song collecton for you</div>
+            <div class="songs"><img src="covers/on top.jpeg" alt="">
+                <h6 id="song-title">On Top</h6>
+                <p id="song-artist">Karan Aujla</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/watchout.png" alt="">
+                <h6 id="song-title">Watch Out</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/gameover.png" alt="">
+                <h6 id="song-title">Game Over</h6>
+                <p id="song-artist">Karan Aujla </p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/gotyou.png" alt="">
+                <h6 id="song-title">Got You</h6>
+                <p id="song-artist">G Khan</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/smw.jpeg" alt="">
+                <h6 id="song-title">Last Ride</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/smw.jpeg" alt="">
+                <h6 id="song-title">Signed To God</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Lat Lag Gayi</h6>
+                <p id="song-artist">Pritam</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/mitraz.png" alt="">
+                <h6 id="song-title">Akhiyaan</h6>
+                <p id="song-artist">Mitraz</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/takeiteasy.png" alt="">
+                <h6 id="song-title">Take It Easy</h6>
+                <p id="song-artist">Karan Aujla</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/kaabil.png" alt="">
+                <h6 id="song-title">Kabil Hoon</h6>
+                <p id="song-artist">Jubin Nautiyal</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/noneed.png" alt="">
+                <h6 id="song-title">No Need</h6>
+                <p id="song-artist">Karan Aujla</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/gerua.png" alt="">
+                <h6 id="song-title">Gerua</h6>
+                <p id="song-artist">Arijit Singh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/apsara.png" alt="">
+                <h6 id="song-title">Apsara</h6>
+                <p id="song-artist">Billa Sonipat</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Aashiqi</h6>
+                <p id="song-artist">Arijit Singh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/omahi.png" alt="">
+                <h6 id="song-title">O Mahi</h6>
+                <p id="song-artist">Arijit Singh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Ek Dilruba</h6>
+                <p id="song-artist">Udit Narayan</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Har Dil Jo Pyar Karega</h6>
+                <p id="song-artist">Udit Narayan</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/terebinna.png" alt="">
+                <h6 id="song-title">Tere Bin</h6>
+                <p id="song-artist">Josh Brar</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/shubh.png" alt="">
+                <h6 id="song-title">In Love</h6>
+                <p id="song-artist">Shubh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/shubh.png" alt="">
+                <h6 id="song-title">You And Me</h6>
+                <p id="song-artist">Shubh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/aajbhi.png" alt="">
+                <h6 id="song-title">Aaj Bhi</h6>
+                <p id="song-artist">Visal Mishra</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/haantuhai.png" alt="">
+                <h6 id="song-title">Haan Tu Hai</h6>
+                <p id="song-artist">KK</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Dil Kya Kare</h6>
+                <p id="song-artist">Jubin Nautiyal</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Tu hi Rab</h6>
+                <p id="song-artist">Rahat Fateh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/moosetape.png" alt="">
+                <h6 id="song-title">Regret</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/rumaal.png" alt="">
+                <h6 id="song-title">Rumaal</h6>
+                <p id="song-artist">Kaka</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/saansonko.png" alt="">
+                <h6 id="song-title">Sansoon Ko</h6>
+                <p id="song-artist">Arijit Singh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/samebeef.png" alt="">
+                <h6 id="song-title">Same Beef</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">She's The One</h6>
+                <p id="song-artist">Jerry</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/shubh.png" alt="">
+                <h6 id="song-title">Fell For You</h6>
+                <p id="song-artist">Shubh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/chosen.png" alt="">
+                <h6 id="song-title">Chosen</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/sochliya.png" alt="">
+                <h6 id="song-title">Soch Liya</h6>
+                <p id="song-artist">Arijit Singh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="music.jpg" alt="">
+                <h6 id="song-title">Sufna Banke</h6>
+                <p id="song-artist">Unknown</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/tareefan.png" alt="">
+                <h6 id="song-title">Tareefan</h6>
+                <p id="song-artist">Karan Aujla</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/moosetape.png" alt="">
+                <h6 id="song-title">These Days</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/tumse.png" alt="">
+                <h6 id="song-title">Tum Se</h6>
+                <p id="song-artist">Arijit Singh</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+            <div class="songs"><img src="covers/husnillahi.png" alt="">
+                <h6 id="song-title">Hussan Illahi</h6>
+                <p id="song-artist">Wazir Patar</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+
+            <div class="songs"><img src="covers/you.png" alt="">
+                <h6 id="song-title">You</h6>
+                <p id="song-artist">Karan Aujla</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+
+            <div class="songs"><img src="covers/zaalima.png" alt="">
+                <h6 id="song-title">Zaalima</h6>
+                <p id="song-artist">Pritam</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+
+            <div class="songs"><img src="covers/moosetape.png" alt="">
+                <h6 id="song-title">US</h6>
+                <p id="song-artist">SMW</p>
+                <div class="play-icon"><img src="song-play.png" alt=""></div>
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="music-controller">
+            <!-- 🎵 Song Info (Left) -->
+            <div class="song-info">
+                <img src="cd-icon.png" alt="Song Thumbnail">
+                <div class="song-details">
+                    <span class="song-title" id="song-title">Song Name</span>
+                </div>
+            </div>
+
+            <!-- 🎮 Centered Playback Controls -->
+            <div class="controls">
+                <i class="fa-solid fa-backward-step prev-btn"></i> <!-- Previous -->
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i> <!-- Play/Pause -->
+                <i class="fa-solid fa-forward-step next-btn"></i> <!-- Next -->
+            </div>
+
+            <!-- ⏳ Progress Bar (Bottom) -->
+            <div class="progress-container">
+                <span class="current-time" id="current-time">0:00</span>
+                <input type="range" class="progress-bar" id="myProgressBar" min="0" max="100" value="0">
+                <span class="total-time" id="audio-duration">0:00</span>
+            </div>
+
+
+            <!-- 🔀 Shuffle & Repeat (Right) -->
+            <div class="extra-controls">
+
+            </div>
+        </div>
+
+</body>
+<script src="app.js"></script>
+<script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+</html>

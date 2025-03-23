@@ -1,0 +1,347 @@
+/* 🌑 Fullscreen Dark Theme */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0A0A0A;
+    /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    /* Allows scrolling if needed */
+}
+
+/* 🎵 Main Music Player Container */
+.music-player {
+    width: 100%;
+    /* Fixed width */
+    height: 850px;
+    /* Fixed height */
+    background-color: #161616;
+    /* Dark Grey */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 🎶 Navbar (Spotify & Apple Music Style) */
+.nav-bar {
+    margin-top: -10px;
+    width: 93rem;
+    height: 90px;
+    background-color: #1E1E1E;
+    /* Slightly lighter for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+/* 🎧 Logo + Title (Left Side) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-left span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 🔍 Search Bar (Centered) */
+.nav-center {
+    flex: 1;
+    /* Takes full space */
+    display: flex;
+    justify-content: center;
+}
+
+.song-search {
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+    font-size: 14px;
+    outline: none;
+    background-color: #2A2A2A;
+    color: white;
+}
+
+/* ⚙️ Profile & Settings (Right Side) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* Circular profile icon */
+    cursor: pointer;
+}
+
+.nav-right i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 💀 Hide Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 1530px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.best-collection {
+    height: 20px;
+    width: 100%;
+    margin: 10px 10px 0px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.songs {
+    position: relative;
+    /* Needed for absolute positioning */
+    background-color: black;
+    margin: 20px 20px 20px 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 1px rgb(53, 53, 53);
+}
+
+.songs img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Ensures full cover */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    /* Below text */
+}
+
+.songs::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    /* Covers bottom part */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    z-index: 2;
+}
+
+.songs h6,
+.songs p {
+    position: absolute;
+    left: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    z-index: 3;
+    /* Keeps text above image */
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.songs h6 {
+    bottom: 0px;
+    /* "On Top" text higher */
+    font-weight: bold;
+}
+
+.songs p {
+    bottom: 5px;
+    /* "Sidhu Moosewala" below "On Top" */
+    font-size: 12px;
+    opacity: 0.8;
+    /* Lighter effect */
+}
+
+.play-icon {
+
+    position: absolute;
+    height: 40px;
+    /* Set size */
+    width: 40px;
+    bottom: 15px;
+    /* Space from bottom */
+    right: 10px;
+    /* Space from right */
+    z-index: 3;
+    /* Above image but below text */
+    opacity: 0.9;
+    /* Slight transparency for better blending */
+}
+
+
+
+/* 🎶 Apple Music-Style Controller */
+.music-controller {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.8);
+    /* Dark transparent background */
+    backdrop-filter: blur(15px);
+    /* Glassmorphism Effect */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    color: white;
+    z-index: 10;
+}
+
+/* 🎵 Song Info */
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 20%;
+}
+
+.song-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: gray;
+}
+
+/* 🎮 Playback Controls (Centered) */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 40%;
+}
+
+.controls i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.controls i:hover {
+    color: #FF2D55;
+    /* Apple Music Pink */
+}
+
+/* 🔘 Play Button (Larger) */
+/* 🎵 Play Button (Larger, Apple Music Style) */
+.play-btn {
+    font-size: 30px;
+    /* Icon Size */
+    color: white;
+    background: transparent;
+    /* Remove solid background */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.play-btn:hover {
+    color: #FF2D55;
+    /* Apple Music Pink */
+}
+
+
+/* ⏳ Progress Bar */
+.progress-container {
+    position: absolute;
+    bottom: 5px;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-container span {
+    color: white;
+    font-size: 12px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    border-radius: 5px;
+    background: gray;
+    outline: none;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* 🔀 Shuffle & Repeat (Right Side) */
+.extra-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    gap: 20px;
+}
