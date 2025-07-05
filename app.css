@@ -345,3 +345,110 @@ body {
     width: 20%;
     gap: 20px;
 }
+
+/* 📱 Mobile Responsive Tweaks */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        top: 10px;
+        border-radius: 0px;
+    }
+
+    .best-collection {
+        display: none;
+    }
+
+    .nav-left {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+        position: relative;
+        left: -120px;
+    }
+
+    .nav-center {
+        display: none;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+        position: relative;
+        left: 130px;
+        top: -45px;
+    }
+
+
+    .playlist {
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: -50px;
+    }
+
+    .songs {
+        width: 45vw;
+        height: 45vw;
+        margin: 10px;
+    }
+
+    .music-controller {
+        display: flex;
+        flex-wrap: wrap;
+        height: 75px;
+        bottom: -0.5px;
+    }
+
+    .song-info{
+        position: relative;
+        top: 20px;
+    }
+    .controls{
+        position: relative;
+        left: -100px;
+    }
+    .extra-controls {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .progress-container {
+        width: 100%;
+        height: 5px;
+        left: 5%;
+        position: relative;
+        left: 185px;
+        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .songs {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .song-search {
+        width: 80%;
+    }
+
+    .controls i {
+        font-size: 20px;
+    }
+
+    .progress-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
