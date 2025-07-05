@@ -350,6 +350,7 @@ body {
 @media screen and (max-width: 480px) {
    body{
     width: 100vw;
+    overflow-y: none;
    }
     .nav-bar {
         flex-direction: column;
@@ -396,13 +397,14 @@ body {
         position: relative;
         top: 10px;
         padding-bottom: 100px;
+        overflow-y: none;
         
     }
 
     .songs {
-        width: 45vw;
-        height: 45vw;
-        margin: 10px;
+        width: 35vw;
+        height: 35vw;
+        margin: 2vw;
     }
 
     .music-controller {
@@ -415,11 +417,12 @@ body {
     .song-info {
         position: relative;
         top: 20px;
+        left: -15px;
     }
 
     .controls {
         position: relative;
-        left: -100px;
+        left: -70px;
     }
 
     .extra-controls {
@@ -429,32 +432,12 @@ body {
     }
 
     .progress-container {
-        width: 100%;
+        width: 50%;
         height: 5px;
         left: 5%;
         position: relative;
-        left: 165px;
+        left: 120px;
 
     }
 }
 
-@media screen and (max-width: 480px) {
-    .songs {
-        width: 40vw;
-        height: 40vw;
-    }
-
-    .song-search {
-        width: 80%;
-    }
-
-    .controls i {
-        font-size: 20px;
-    }
-
-    .progress-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-}
